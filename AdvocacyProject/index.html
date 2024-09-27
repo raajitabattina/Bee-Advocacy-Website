@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>New Bees</title>
+
+    <!-- Header -->
+    <div class="header-container">
+      <div class="header-item">
+        <img id="header-img" alt="Bee Icon">
+      </div>
+      <div class="header-item">
+        <h1>Save the Bees</h1>
+        <h3>This is where NewBees can learn about the Bees</h3>
+        <button class="header-button" type="button">Fun facts about Bees!</button>
+        <button class="header-button" type="button">Contribute</button>
+
+        <button id="reduce-motion-button">Reduce Motion</button>
+        
+      </div>
+    </div>
+
+    <h3>Truth Bee Told</h3>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="reset-webview.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class = revealable">
+    <!-- Navbar -->
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact-img">Impact</a></li>
+        <li><a href="#news">News</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
+        <!-- Stretch Challenge: Drop Down -->
+      </ul>
+    </div>
+
+    <!-- Flexbox Layout -->
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <!-- Headings -->
+
+    <!-- About -->
+    <div id="about" class="revealable">
+      <h2>Why are bees important?</h2>
+      <p>Bees are crucial pollinators in the food supply chain, but they are endangered due to habitat loss, pesticide use, and climate change. Saving bees is essential for food security.</p>
+    </div>
+
+    <!-- Data -->
+    <h2>Statistics</h2>
+    <h4>2021 Honey Bee Colonies Loss Estimates</h4>
+    <div>
+      <ul>
+        <li>Summer loss: 30%</li>
+        <li>Winter loss: 30% - 40%</li>
+        <li>Annual loss: >40%</li>
+      </ul>
+    </div>
+
+    <!-- Impact -->
+    <div id="impact-img revealable">
+      <div class="h2">
+        <h2>How Bees Are Impacted!</h2>
+      </div>
+      <div class="flex-container revealable">
+        <img src="img/data_2.png" alt="Honey Bee Colonies Loss Estimates from 2008 to 2021" style="width: 400px; height: 300px; background-color: #E1AD01; padding: 20px; align-content: center;" />
+      </div>
+      <div class="petition revealable" id="petition">
+        <h2>Sign Our Petition 📢</h2>
+        <div class="petition-container">
+          <div class="petition-para">
+            <p>Signing a petition to save the bees is a crucial act of environmental responsibility. Your signature signifies your commitment to safeguarding these essential pollinators.</p>
+          </div>
+          <div class="signatures">
+            <p>🖊️ DJ from Brooklyn supports this.</p>
+            <p>🖊️ Amy from Queens supports this.</p>
+            <p>🖊️ Teresa from Harlem supports this.</p>
+          </div>
+        </div>
+        <form id="sign-petition" title="sign-petition">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown" name="hometown" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+        </form>
+        <button id="sign-now-button">Sign Now</button>
+        <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+      </div>
+
+      <!-- Modal -->
+      <div id="thanks-modal" class="modal">
+        <div class="modal-content">
+          <div id="modal-text-container">
+            <p id="thanks-modal-content">Thank you for your support! We appreciate your signature.</p>
+            <div id="modal-text-container">
+              <button id="closeModalButton" class="modal-button">Close Modal</button>
+            </div>
+          </div>
+          <img src="img/bee.png" alt="Thank You Image" class="thanks-image" />
+        </div>
+      </div>
+
+      <!-- Informational Video -->
+      <h3>Informational Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Jzp6H8BAJ7o?si=GmXneJPV9YW9Jv8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <!-- News -->
+      <div id="news" class="revealable">
+        <h2>Recent News</h2>
+      </div>
+
+      <!-- Article 1 -->
+      <a class="bee-article1" href="https://www.medicalnewstoday.com/articles/why-are-bees-important-to-humans">
+        <article>
+          <h3>Why are Bees so important?</h3>
+          <p>A focused article about what makes bees so important and why humans should care.</p>
+        </article>
+      </a>
+
+      <!-- Article 2 -->
+      <a class="bee-article2" href="https://www.nwf.org/Educational-Resources/Wildlife-Guide/Invertebrates/Bees">
+        <article>
+          <h3>The National WildLife Federation - Bees</h3>
+          <p>A detailed article about what are bees and their place in the ecosystem and other information.</p>
+        </article>
+      </a>
+
+    </div>
+    <script src="index.js"></script>
+
+    </div>
+  </body>
+
+</html>
